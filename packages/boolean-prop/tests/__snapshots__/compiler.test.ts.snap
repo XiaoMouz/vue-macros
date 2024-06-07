@@ -31,11 +31,11 @@ exports[`compiler > basic 1`] = `
         "line": 1,
         "offset": 14,
       },
-      "source": "checked",
+      "source": "true",
       "start": {
         "column": 8,
         "line": 1,
-        "offset": 7,
+        "offset": 8,
       },
     },
     "type": 4,
@@ -51,6 +51,124 @@ exports[`compiler > basic 1`] = `
       "column": 8,
       "line": 1,
       "offset": 7,
+    },
+  },
+  "modifiers": [],
+  "name": "bind",
+  "type": 7,
+}
+`;
+
+exports[`compiler > false prop 1`] = `
+{
+  "arg": {
+    "constType": 3,
+    "content": "checked",
+    "isStatic": true,
+    "loc": {
+      "end": {
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "source": "!checked",
+      "start": {
+        "column": 8,
+        "line": 1,
+        "offset": 8,
+      },
+    },
+    "type": 4,
+  },
+  "exp": {
+    "constType": 3,
+    "content": "false",
+    "isStatic": false,
+    "loc": {
+      "end": {
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "source": "false",
+      "start": {
+        "column": 8,
+        "line": 1,
+        "offset": 9,
+      },
+    },
+    "type": 4,
+  },
+  "loc": {
+    "end": {
+      "column": 16,
+      "line": 1,
+      "offset": 15,
+    },
+    "source": "!checked",
+    "start": {
+      "column": 8,
+      "line": 1,
+      "offset": 8,
+    },
+  },
+  "modifiers": [],
+  "name": "bind",
+  "type": 7,
+}
+`;
+
+exports[`compiler > false prop prefix 1`] = `
+{
+  "arg": {
+    "constType": 3,
+    "content": "checked",
+    "isStatic": true,
+    "loc": {
+      "end": {
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "source": "~checked",
+      "start": {
+        "column": 8,
+        "line": 1,
+        "offset": 8,
+      },
+    },
+    "type": 4,
+  },
+  "exp": {
+    "constType": 3,
+    "content": "false",
+    "isStatic": false,
+    "loc": {
+      "end": {
+        "column": 16,
+        "line": 1,
+        "offset": 15,
+      },
+      "source": "false",
+      "start": {
+        "column": 8,
+        "line": 1,
+        "offset": 9,
+      },
+    },
+    "type": 4,
+  },
+  "loc": {
+    "end": {
+      "column": 16,
+      "line": 1,
+      "offset": 15,
+    },
+    "source": "~checked",
+    "start": {
+      "column": 8,
+      "line": 1,
+      "offset": 8,
     },
   },
   "modifiers": [],
